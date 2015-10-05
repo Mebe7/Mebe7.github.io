@@ -3,12 +3,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
-}
-
-body {
-        background-image: url("checked.jpg");
-        background-repeat: repeat-y;
-        background-repeat: repeat-x;
+    background-image: url("checked.jpg");
 }
 
 .main {
@@ -18,7 +13,7 @@ body {
     line-height: 1.5em;
     color: #545454;
     background-color: #ffffff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.06);
     margin: 0 auto 0;
 }
 
