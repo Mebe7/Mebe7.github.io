@@ -17,7 +17,8 @@
 			        $(".inside").css("top", (($(window).height()*.27)+"px"));
 			        $(".inside").css("left", (($(window).width()*.39)+"px"));
 			        $(".inside").css("left", (parseInt(($("#menuBox").css("marginLeft")))+62+"px"));
-
+			        $(".arrow").css("left", (parseInt(($("#menuBox").css("marginLeft")))+32+"px"));
+			        $(".arrow").css("top", (($(window).height()*.27)+"px"));
 			    });
 			    $(window).load(function(){
 			        $("#name").css("font-size", (($(window).height()*0.09765625)+"px"));
@@ -25,6 +26,32 @@
 			        $(".inside").css("font-size", (($(window).height()*0.04166666666)+"px"));
 			        $(".inside").css("top", (($(window).height()*.27)+"px"));
 			        $(".inside").css("left", (parseInt(($("#menuBox").css("marginLeft")))+62+"px"));
+			        $(".arrow").css("left", (parseInt(($("#menuBox").css("marginLeft")))+32+"px"));
+			        $(".arrow").css("top", (($(window).height()*.27)+"px"));
+			    });
+			    $("#about").mouseover(function(){
+			    	$("#arrow1").css("visibility","visible");
+			    	$("#arrow2").css("visibility","hidden");
+			    	$("#arrow3").css("visibility","hidden");
+			    	$("#arrow4").css("visibility","hidden");
+			    });
+			    $("#projects").mouseover(function(){
+			    	$("#arrow1").css("visibility","hidden");
+			    	$("#arrow2").css("visibility","visible");
+			    	$("#arrow3").css("visibility","hidden");
+			    	$("#arrow4").css("visibility","hidden");
+			    });
+			    $("#contact").mouseover(function(){
+			    	$("#arrow1").css("visibility","hidden");
+			    	$("#arrow2").css("visibility","hidden");
+			    	$("#arrow3").css("visibility","visible");
+			    	$("#arrow4").css("visibility","hidden");
+			    });
+			    $("#resume").mouseover(function(){
+			    	$("#arrow1").css("visibility","hidden");
+			    	$("#arrow2").css("visibility","hidden");
+			    	$("#arrow3").css("visibility","hidden");
+			    	$("#arrow4").css("visibility","visible");
 			    });
 			});
 		</script>
@@ -38,6 +65,20 @@
 					<p id="projects">Projects</p>
 					<p id="contact">Contact</p>
 					<p id="resume"><a href="Matthew_Wassel_Resume.pdf" target="_blank">Resume</a></p>
+				</div>
+				<div class="inside arrow">
+					<p class="parrow">
+						<img src="Arrow.gif" id ="arrow1" class="arrowh">
+					</p>
+					<p class="parrow">
+						<img src="Arrow.gif" id ="arrow2" class="arrowh">
+					</p>
+					<p class="parrow">
+						<img src="Arrow.gif" id ="arrow3" class="arrowh">
+					</p>
+					<p class="parrow">
+						<img src="Arrow.gif" id ="arrow4" class="arrowh">
+					</p>
 				</div>
 		</div>
 
