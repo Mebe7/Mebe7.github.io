@@ -78,3 +78,24 @@ h2{
 .arrowh{
 	visibility: hidden;
 }
+
+.cloud{
+	position: fixed;
+	display: block;
+	z-index: -5;
+}
+
+#cloud1{
+	top: 6.578947368%;
+	left: 2.830188679%;
+}
+
+#cloud2{
+	top: 81.578947368%;
+	left: 17.924528301%;
+}
+
+#cloud3{
+	top: 68.421052631%;
+	left: 72.641509434%;
+}
