@@ -28,6 +28,26 @@
 			        $(".inside").css("left", (parseInt(($("#menuBox").css("marginLeft")))+62+"px"));
 			        $(".arrow").css("left", (parseInt(($("#menuBox").css("marginLeft")))+32+"px"));
 			        $(".arrow").css("top", (($(window).height()*.27)+"px"));
+			        $("#cloud1").animate({left: "-300px"}, {duration: 500000, easing: "linear"});
+			        $("#cloud2").animate({left: "-300px"}, {duration: 500000, easing: "linear"});
+			        $("#cloud3").animate({left: "-300px"}, {duration: 500000, easing: "linear"});
+			        $("#cloud4").animate({left: "-300px"}, {duration: 500000, easing: "linear"});
+
+			        if (parseInt($("#cloud1").css("left")) <-236){
+			        	$("#cloud2").css("left", (($(window).width()+236)+"px"));
+			        }
+
+			        if (parseInt($("#cloud2").css("left")) <-236){
+			        	$("#cloud2").css("left", (($(window).width()+236)+"px"));
+			        }
+
+			        if (parseInt($("#cloud3").css("left")) <-236){
+			        	$("#cloud3").css("left", (($(window).width()+236)+"px"));
+			        }
+
+			        if (parseInt($("#cloud3").css("left")) <-236){
+			        	$("#cloud3").css("left", (($(window).width()+236)+"px"));
+			        }
 			    });
 			    $("#about").mouseover(function(){
 			    	$("#arrow1").css("visibility","visible");
@@ -84,5 +104,6 @@
 		<img src="Cloud.png" id="cloud1" class="cloud">
 		<img src="Cloud.png" id="cloud2" class="cloud">
 		<img src="Cloud.png" id="cloud3" class="cloud">
+		<img src="Cloud.png" id="cloud4" class="cloud">
 	</body>
 </html>

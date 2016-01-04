@@ -83,6 +83,7 @@ h2{
 	position: fixed;
 	display: block;
 	z-index: -5;
+	cursor: none;
 }
 
 #cloud1{
@@ -98,4 +99,9 @@ h2{
 #cloud3{
 	top: 68.421052631%;
 	left: 72.641509434%;
+}
+
+#cloud4{
+	top:28.32422%;
+	left: 86.2342%;
 }
